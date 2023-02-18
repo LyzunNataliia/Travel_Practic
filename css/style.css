@@ -51,24 +51,21 @@ html {
 img {
   max-width: 100%;
 }
-h2 {
+.head-stail {
   font-weight: 800;
   font-size: 64px;
   line-height: 1;
   margin-top: 0;
   margin-bottom: 100px;
 }
-a {
+.link {
   text-decoration: none;
   color: #0b0614;
 }
 p {
   margin: 0;
 }
-select {
-  border: none;
-}
-ul {
+.listes {
   display: flex;
   list-style: none;
   margin: 0;
@@ -78,7 +75,6 @@ ul {
   max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
-  /* padding: 0 15px; */
 }
 .btn {
   display: inline-block;
@@ -86,7 +82,9 @@ ul {
   font-size: 17px;
   line-height: 1;
   color: #fff;
+  white-space: nowrap;
   text-transform: capitalize;
+  text-decoration: none;
   background-color: #ff5029;
   border-radius: 12px;
   cursor: pointer;
@@ -101,8 +99,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  /* outline: 1px solid red; */
 }
 .header-left {
   display: flex;
@@ -137,8 +133,8 @@ ul {
 .header-search {
   display: block;
   margin-left: 24px;
-  /* padding-top: 6px; */
   padding-bottom: 6px;
+  text-decoration: none;
 }
 .header-search svg {
   width: 24px;
@@ -223,6 +219,7 @@ ul {
 }
 .section-hero-select {
   display: block;
+  border: none;
 }
 .section-hero-text {
   font-size: 16px;
@@ -462,6 +459,9 @@ ul {
 }
 .footer-top-menu-list {
   display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .footer-top-menu-link {
   font-weight: 300;
