@@ -469,7 +469,14 @@ p {
   flex-grow: 10;
 }
 .footer-top-list {
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  align-items: start;
+  justify-items: end;
+  margin: 0 auto;
+
+  list-style: none;
 }
 /* .footer-top-item {
   flex-basis: 33.3%;
@@ -490,10 +497,12 @@ p {
   margin-right: 40px;
 }
 .footer-top-heading {
+  margin-top: 0;
   margin-bottom: 0;
 }
 .footer-top-menu-list {
   margin-top: 30px;
+  padding-top: 10px;
 }
 .footer-top-menu-item:not(:last-child) {
   margin-bottom: 12px;
