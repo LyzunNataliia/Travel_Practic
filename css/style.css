@@ -87,7 +87,14 @@ p {
   text-decoration: none;
   background-color: #ff5029;
   border-radius: 12px;
+}
+.btn:hover,
+.btn:focus {
   cursor: pointer;
+  transition: 0.4s;
+  font-size: 18px;
+  background-color: #ff4218;
+  box-shadow: 2px 1px 2px rgb(255, 80, 41, 0.45);
 }
 .header {
   height: 62px;
@@ -269,8 +276,19 @@ p {
 .section-guides-item:not(:last-child) {
   margin-right: 30px;
 }
+.section-guides-item:hover {
+  background: #ff5029;
+  color: #ffffff;
+  box-shadow: 0px -8px 20px rgba(235, 235, 235, 0.15),
+    0px 30px 60px rgba(198, 191, 191, 0.15);
+}
+/* svg:hover {
+  fill: #ffffff;
+} */
+
 .section-guides-avatar {
   margin-bottom: 30px;
+  border-radius: 50%;
 }
 .section-guides-item svg {
   margin: 12px 0;
@@ -286,6 +304,10 @@ p {
   line-height: 22px;
 
   color: rgba(11, 6, 20, 0.6);
+}
+.section-guides-review:hover {
+  content: "";
+  color: #ffffff;
 }
 /* HOW WORK */
 
