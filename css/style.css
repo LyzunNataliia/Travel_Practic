@@ -276,14 +276,23 @@ p {
 .section-guides-item:not(:last-child) {
   margin-right: 30px;
 }
-.section-guides-item:hover {
+.section-guides-item:hover,
+.section-guides-item:hover path,
+.section-guides-item:hover p {
   background: #ff5029;
   color: #ffffff;
   box-shadow: 0px -8px 20px rgba(235, 235, 235, 0.15),
     0px 30px 60px rgba(198, 191, 191, 0.15);
+  /* fill: #ffffff; */
 }
 /* svg:hover {
   fill: #ffffff;
+} */
+.section-guides-star {
+  color: #ff5029;
+}
+/* .section-guides-item:hover path {
+  color: #ffffff;
 } */
 
 .section-guides-avatar {
@@ -305,7 +314,7 @@ p {
 
   color: rgba(11, 6, 20, 0.6);
 }
-.section-guides-review:hover {
+.section-guides-review:focus {
   content: "";
   color: #ffffff;
 }
